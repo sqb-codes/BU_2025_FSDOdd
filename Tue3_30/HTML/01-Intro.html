@@ -1,0 +1,116 @@
+<!-- W3C Standards -->
+<!-- We are telling our browser that we are using HTML:5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- charset - character set -->
+    <!-- UTF - Unicode/Universal Text Format -->
+    <!-- 8 - bit - 1 byte -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsiveness -->
+     
+    <meta name="description" content="description of my web page">
+
+    <meta name="keywords" content="online shopping, buy online">
+
+    <meta name="og:title" content="This title will appear on Social Media">
+    <meta name="og:desc" content="">
+
+    <!-- favicon - that appears on browser's tab -->
+    <link rel="icon" href="https://m.media-amazon.com/images/I/71fvH2BN9-L._AC_SY400_.jpg">
+
+    <!-- Styelsheet -->
+    <!-- JavaScript -->
+
+    <title>Document</title>
+
+    <style>
+        @media(max-width: 1200px) {
+            :root {
+                font-size: 16px;
+            }
+            body {
+                background-color: lightcoral;
+            }
+        }
+        @media(max-width: 992px) {
+            :root {
+                font-size: 14px;
+            }
+            body {
+                background-color: lightgray;
+            }
+        }
+        @media(max-width: 768px) {
+            :root {
+                font-size: 12px;
+            }
+            body {
+                background-color: lightgreen;
+            }
+        }
+        img {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <h1>This is my first heading...</h1> -->
+
+    <!-- Emmet - Shorthand of HTML/CSS -->
+    <!-- h1*6 -->
+    <!-- h$*6 -->
+    <!-- h${This is heading_$}*6 -->
+     
+    <!-- h1 - most important heading: title of the page -->
+    <!-- we use h1 only once on a page -->
+     <h1>This is heading_1</h1>
+
+    <!-- Main title of the section -->
+     <h2>This is heading_2</h2>
+
+    <!-- Sub-headings -->
+     <h3>This is heading_3</h3>
+     <h4>This is heading_4</h4>
+     <h5>This is heading_5</h5>
+     <h6>This is heading_6</h6>
+
+    <!-- 
+     Units in HTML and CSS
+     px - pixel - hard-coded
+     16px = base size of page
+     em - 1em = base size
+     rem, %, vh, vw, vmin, vmax
+    -->
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur qui quisquam a soluta autem adipisci at, ex impedit accusantium dolor optio. Magni nemo libero deleniti quaerat? Voluptatibus commodi tempore soluta.
+      </p>
+      
+      <img src="https://m.media-amazon.com/image/I/71IIn83pF6L._AC_SY400_.jpg" alt="img-1">
+      <img src="https://m.media-amazon.com/images/I/71RfLrAqGgL._AC_SY400_.jpg" alt="img-2">
+
+      <hr>
+
+      <pre>
+        <code>
+            #include &lt;iostream&gt;
+
+            using namespace std;
+
+            int main() {
+                    for (int i = 1; i <= 5; ++i) {
+                    cout << i << " ";
+                }
+                return 0;
+            }
+        </code>
+      </pre>
+
+      <h2>Copyright &copy; &alpha; &ohm; &hearts;</h2>
+
+</body>
+</html>
