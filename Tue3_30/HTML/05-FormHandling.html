@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- 
+        action - path where user will redirect on form submit
+        method - GET & POST
+        enctype - encryption type - used when we take image/file from user
+     -->
+    <form action="#" method="GET" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>
+                    <label for="username">Enter your name</label>
+                </td>
+                <td>
+                    <input type="text" autofocus id="username" required placeholder="Enter your name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email">Enter your email</label>
+                </td>
+                <td>
+                    <input type="email" id="email" required placeholder="Enter your email" value="ravi@gmail.com" readonly>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pwd">Enter your password</label>
+                </td>
+                <td>
+                    <input type="password" id="pwd" required placeholder="Enter your password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="age">Enter your age</label>
+                </td>
+                <td>
+                    <input type="number" min="18" max="60" id="age">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="dob">Enter your DOB</label>
+                </td>
+                <td>
+                    <input type="date" id="dob">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="phone">Enter your phone</label>
+                </td>
+                <td>
+                    <input type="tel" id="phone">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Select Gender
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="m"> Male
+                    <input type="radio" name="gender" value="f"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select your country</td>
+                <td>
+                    <select>
+                        <option>Select Country</option>
+                        <optgroup label="Asia">
+                            <option value="ind">India</option>
+                            <option value="china">China</option>
+                            <option value="sl">Srilanka</option>
+                            <option value="indo">Indonesia</option>
+                            <option value="thai">Thailand</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="">England</option>
+                            <option value="">Germany</option>
+                            <option value="">France</option>
+                            <option value="">Denmark</option>
+                            <option value="">Scotland</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
