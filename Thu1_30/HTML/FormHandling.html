@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- 
+        action - route where user will be routed when user submit form
+        method - GET, POST
+        enctype - Encryption Type - generally used when we upload files or images
+     -->
+    <form action="#" method="GET" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>
+                    <label for="username">Enter your name</label>
+                </td>
+                <td>
+                    <input type="text" maxlength="10" required autofocus placeholder="Enter your name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="usermail">Enter your email</label>
+                </td>
+                <td>
+                    <input type="email" required placeholder="Enter your email" value="ravi@gmail.com" readonly>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pwd">Enter your password</label>
+                </td>
+                <td>
+                    <input type="password" required placeholder="Enter your password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="age">Enter your age</label>
+                </td>
+                <td>
+                    <input type="number" max="60" min="18">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="dob">Enter your DOB</label>
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Upload Image</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Select Range
+                </td>
+                <td>
+                    <input type="range">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Your Progress
+                </td>
+                <td>
+                    <progress value="10" max="100"></progress>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Select Gender
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="m"> Male
+                    <input type="radio" name="gender" value="f"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Hobby</td>
+                <td>
+                    <input type="checkbox"> Cricket
+                    <input type="checkbox"> Chess
+                    <input type="checkbox"> Table tennis
+                    <input type="checkbox"> Badminton
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Enter your message
+                </td>
+                <td>
+                    <textarea rows="10" cols="20"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
