@@ -1,0 +1,35 @@
+JavaScript
+
+Why we need to learn JS ?
+- Base of Full Stack
+- Base of most of the libraries like 
+    React, Angular, Node, Next, Nest, Three, Electron...
+- To make browser dynamic
+- 2nd most popular programming on GitHub
+
+How JS was introduced ?
+- Nexus was first browser but is was static
+- Netscape hired Brendon Eich
+- Self + Scheme + Java + Python
+- Developed JS in 10 days
+- A new browser was introduced known as Mosaic
+- Initially JS was named as Mocha
+- Launched in market with name LiveScript
+- Netscape did colab with Sun Mictosystem and renamed LiveScript to JavaScript
+- ECMA was introduced to standardize JavaScript
+
+Features of JavaScript
+- Dynamically Typed
+- Interpreted (JIT - Just In Time Compiler)
+    - Runs on V8 Engine (Compiler of JS in Chrome browser)
+    - SpiderMonkey inside Mozilla
+    - Chakra inside IE
+- Loosely Typed
+- Event Driven
+  - Event - click, keypress, mousemove...
+- Multi-paradigm
+  - Object Oriented
+  - Procedural
+  - Functional
+- DOM - Document Object Model
+- BOM - Browser Object Model
