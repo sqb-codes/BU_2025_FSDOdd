@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header {
+            background-color: lightblue;
+            text-align: center;
+        }
+        #section-1 {
+            background-color: lightcoral;
+        }
+        #section-2 {
+            background-color: lightgray;
+        }
+        .border-black {
+            border: 2px solid black;
+        }
+        .title {
+            text-align: center;
+        }
+
+        /* Apply CSS on h2 inside section-1 only */
+        #section-1 h2 {
+            color: darkgreen;
+        }
+
+        .section-wrapper {
+            width: 700px;
+        }
+
+        #section-1, #section-2 {
+            padding: 10px;
+        }
+
+        /* #section-3 .nested-div h2{
+            color: red;
+        } */
+         #section-3 .nested-nested-div h2{
+            color: red;
+        }
+        /* Apply CSS on immediate child element of #section-3 */
+        #section-3 > h2 {
+            color: blue;
+        }
+
+        /* Apply CSS on immediate sibling */
+        #section-3 + h2 {
+            color: red;
+        }
+
+        /* Apply CSS on all sibling */
+        #section-3 ~ h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header" class="border-black">
+        <h1>Selectors</h1>
+    </header>
+
+    <!-- 
+        ID - Identity
+        - it is always unique
+        - cannot be repeated on one web page
+        - one tag can have only one id at a time
+        - represented by #
+        Class
+        - it is used for grouping of elements
+        - could be repeated n number of times
+        - one tag can have multiple classes
+        - represented by .
+     -->
+
+    <section id="section-1" class="border-black section-wrapper">
+        <h2 class="title">This is section-1</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolore architecto provident natus in repellat! Cupiditate omnis non quis atque rem, animi consectetur, ipsum sed, maxime quae ipsam ad consequatur.
+        </p>
+        <h2>This is also part of section-1</h2>
+    </section>
+
+    <hr>
+
+    <section id="section-2" class="border-black section-wrapper">
+        <h2 class="title">This is section-2</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolore architecto provident natus in repellat! Cupiditate omnis non quis atque rem, animi consectetur, ipsum sed, maxime quae ipsam ad consequatur.
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="section-3" class="border-black section-wrapper">
+        <h2>This is title of section-3</h2>
+        <div class="nested-div">
+            <h2>This heading is inside nested-div</h2>
+            <h2>This heading is inside nested-div</h2>
+            <div class="nested-nested-div">
+                <h2>This heading is inside nested-nested-div</h2>
+                <h2>This heading is inside nested-nested-div</h2>
+            </div>
+        </div>
+    </section>
+
+    <h2>This heading is after section-3</h2>
+    <h2>This heading is after section-3</h2>
+    <h2>This heading is after section-3</h2>
+    
+</body>
+</html>
