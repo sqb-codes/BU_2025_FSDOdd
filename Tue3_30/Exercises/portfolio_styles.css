@@ -1,3 +1,138 @@
-h2 {
+/* Selectors */
+/* 
+ID - identity
+- used to select a single element
+- id is unique within a page
+- one tag can have only one id
+- use # to select an id
+
+Class
+- used to select multiple elements
+- one tag can have multiple classes
+- one class can be used by multiple tags
+- use . to select a class
+
+Element
+ */
+
+ /* h2 {
     color: gray;
+} */
+
+#header {
+    background-color: lightgray;
+}
+
+/* #home {
+    background-color: lightblue;
+} */
+
+.section-wrapper {
+    background-color: lightblue;
+}
+
+.border-black {
+    border: 2px solid black;
+}
+
+.border-red {
+    border: 2px solid red;
+}
+
+
+#home h2,
+#about h2{
+    text-align: center;
+}
+
+/* #home p {
+    color: darkblue;
+} */
+
+/* #home .nested-nested-div p {
+    color: darkblue;
+    font-weight: bold;
+} */
+
+
+/* 
+Combinators
+> - direct child
++ - immediate sibling
+~ - all siblings
+*/
+
+#home > h2 {
+    text-transform: uppercase;
+}
+
+#home > p {
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Select immediate sibling only */
+/* #about h2 + p{
+    text-align: center;
+} */
+
+/* Select all siblings */
+#about h2 ~ p{
+    text-align: center;
+}
+
+
+#header ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#header ul li {
+    /* display: inline; */
+    display: inline-block;
+    margin: 10px;
+}
+
+/* 
+Pseudo-classes
+- :hover
+- :active
+- :focus
+- :first-child
+- :last-child
+- :nth-child(n)
+*/
+#header ul li a:hover {
+    color: red;
+}
+
+/* #header ul li:first-child a{
+    color: red;
+} */
+
+/* #header ul li:last-child a{
+    color: red;
+} */
+
+/* #header ul li:nth-child(3) a{
+    color: red;
+} */
+
+/* #header ul li:nth-child(odd) a{
+    color: red;
+} */
+
+/* #header ul li:nth-child(2n) a{
+    color: red;
+} */
+
+#header ul li:not(:last-child) {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+#home img:hover {
+    height: 300px;
+    width: 300px;
 }

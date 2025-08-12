@@ -16,10 +16,25 @@
 </head>
 <body>
 
-    <header id="header">
+    <header id="header" class="border-black">
         <h1 style="color: red;">Ravi</h1>
         <nav>
             <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -41,24 +56,32 @@
 
     <hr>
 
-    <section id="home">
+    <section id="home" class="section-wrapper border-black">
         <!-- <h2 style="color: green;">Welcome to My Portfolio</h2> -->
-         <h2>Welcome to My Portfolio</h2>
+        <h2>Welcome to My Portfolio</h2>
         <p>
-            Hello I'm Ravi, a passionate software developer. <br>
-            I specialize in Full Stack, AI and DevOps...
+            This is my Portfolio
         </p>
-        <img src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM=" height="300" width="400" alt="">
-        <p>
-            Feel free to explore my work and learn more about me
-        </p>
+        <div class="nested-div">
+            <h2>Description</h2>
+            <p>
+                Hello I'm Ravi, a passionate software developer. <br>
+                I specialize in Full Stack, AI and DevOps...
+            </p>
+            <div class="nested-nested-div">
+                <img src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM=" height="300" width="400" alt="">
+                <p>
+                    Feel free to explore my work and learn more about me
+                </p>
+            </div>
+        </div>
     </section>
 
     <hr>
 
-    <section id="about">
+    <section id="about" class="section-wrapper border-red">
         <!-- <h2 style="color: green;">About Me</h2> -->
-         <h2>About Me</h2>
+        <h2>About Me</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi obcaecati consectetur ad placeat ipsam tenetur voluptates? Cupiditate nostrum recusandae quae asperiores ex distinctio aliquam quaerat fugiat, nihil voluptatum delectus!
         </p>
@@ -69,7 +92,7 @@
 
     <hr>
 
-    <section id="skills">
+    <section id="skills" class="section-wrapper border-black">
         <!-- <h2 style="color: green;">My Skills</h2> -->
          <h2>My Skills</h2>
         <ul>
@@ -84,7 +107,7 @@
 
     <hr>
 
-    <section id="projects">
+    <section id="projects" class="section-wrapper border-red">
         <h2>My Projects</h2>
         <div>
             <h3>Project Title</h3>
@@ -117,7 +140,7 @@
 
     <hr>
 
-    <section id="contact">
+    <section id="contact" class="section-wrapper border-black">
         <h2>Contact Me</h2>
         <form action="#">
             <table>
