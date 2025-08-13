@@ -1,0 +1,94 @@
+section {
+    margin-bottom: 100px;
+}
+
+#header {
+    /* background-color: #2A55E5; */
+    /* background-color: rgb(0,0,0); */
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: rgb(255,0,0); */
+    /* background-color: rgb(200, 255, 200); */
+    /* background-color: #000; */
+    /* background-color: #000000; */
+    /* background-color: #fff; */
+    /* background-color: #ffffff; */
+
+    /* background-color: #00ff00; */
+    /* background-color: #ff0000; */
+    /* background-color: #0f6ac4; */
+    /* background: linear-gradient(to right, #0f6000, #2A55E5); */
+    /* background: linear-gradient(90deg, #fdc909, #ffffff); */
+    background: linear-gradient(45deg, #ffffff, #fdc909, #7eadd1);
+
+    padding-left: 20px;
+}
+
+#header ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#header ul li {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    padding: 20px;
+    width: 15%;
+    text-align: center;
+}
+#header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#header ul li:hover {
+    background-color: #eec8a5;
+}
+
+#banner {
+    height: 500px;
+    /* background-image: url("https://thumbs.dreamstime.com/b/d-icon-young-business-man-working-his-laptop-office-home-employee-freelancer-programmer-cartoon-close-up-portrait-276414596.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-position: center center; */
+    /* background: linear-gradient(45deg, #ffffff, #fdc909, #7eadd1); */
+    /* background-color: aliceblue; */
+    background: aliceblue url("https://thumbs.dreamstime.com/b/d-icon-young-business-man-working-his-laptop-office-home-employee-freelancer-programmer-cartoon-close-up-portrait-276414596.jpg") no-repeat center center/contain;
+}
+
+#about {
+    text-align: center;
+    background-color: #e3e9ef;
+    /* top+bottom=20px left+right=0px */
+    padding: 20px 0px;
+}
+
+
+#skills ul li {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: #7eadd1;
+    /* border-width: 5px; */
+    /* border-color: red; */
+    /* border-style: solid; */
+    /* border-style: dashed; */
+    /* border-style: dotted; */
+    /* border-style: double; */
+    border: 10px solid red;
+    /* border-left: 10px solid red; */
+    /* border-radius: 80px; */
+    border-radius: 50%;
+    /* border-top-left-radius: 100px;
+    border-top-right-radius: 100px; */
+}
+#skills ul li img {
+    width: 70%;
+    height: 70%;
+    /* object-fit: cover; */
+    object-fit: contain;
+    padding-top: 25px;
+}
