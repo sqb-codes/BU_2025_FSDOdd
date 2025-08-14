@@ -22,6 +22,8 @@ Element
 /* Universal selector */
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 #header {
@@ -32,8 +34,17 @@ Element
     background-color: lightblue;
 } */
 
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
 .section-wrapper {
     background-color: lightblue;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+    margin: 50px 0px;
+    padding: 50px 0px;
 }
 
 .border-black {
@@ -83,9 +94,9 @@ Combinators
 } */
 
 /* Select all siblings */
-#about h2 ~ p{
+/* #about h2 ~ p{
     text-align: center;
-}
+} */
 
 
 #header ul {
@@ -154,6 +165,41 @@ Pseudo-classes
     /* border-style: double; */
 }
 
+
+#home {
+    /* background: linear-gradient(to right, lightblue, lightgreen); */
+    /* background: linear-gradient(90deg, orange 20%, white 50%, green 10%); */
+    background: linear-gradient(180deg, orange, white, green);
+    /* background-repeat: space; */
+    /* height: 500px; */
+    /* background-color: rgb(0, 0, 0); */
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: rgb(0, 255, 0); */
+    /* background-color: rgb(225, 190, 190); */
+    
+    /* 0-9 / a-f */
+    /* background-color: #000; */
+    /* background-color: #000000; */
+    /* background-color: #ff0000; */
+    /* background-color: #898F9C; */
+    color: #fff;
+    height: 60vh;
+}
+
+#home .bg-img {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    /* background-image: url("https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM="); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-size: 100% 100%; */
+    border-radius: 50%;
+    background: url("https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM=") no-repeat center center / 100% 100%;
+}
+
 #home img {
     width: 300px;
     height: 300px;
@@ -172,4 +218,38 @@ Pseudo-classes
     /* filter: blur(1px); */
     /* filter: brightness(1.3); */
     filter: grayscale(100%);
+}
+
+#home h2 {
+    font-size: 80px;
+    background-image: url("https://media.tenor.com/I1uKTqRLFyEAAAAM/%CF%86%CF%89%CF%84%CE%B9%CE%AC-%CE%BC.gif");
+    background-clip: text;
+    color: transparent;
+}
+
+/* Box Model */
+#about h2 {
+    /* margin-bottom: 50px; */
+    /* padding-bottom: 50px; */
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid black;
+}
+#about p {
+    margin-bottom: 30px;
+}
+
+#about {
+    background-image: url("https://phoneky.co.uk/thumbs/screensavers/down/misc/20060223004827.gif");
+    background-repeat: no-repeat;
+    background-size: 20% 100%;
+    background-color: transparent;
+    background-attachment: fixed;
+}
+
+
+#projects {
+    background-image: url("https://i.pinimg.com/originals/11/e6/8f/11e68f261bf008be3868d374f96be384.gif");
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
