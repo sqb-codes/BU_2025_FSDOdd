@@ -26,6 +26,10 @@ Element
     padding: 0px;
 }
 
+ul {
+    list-style: none;
+}
+
 #header {
     background-color: lightgray;
 }
@@ -163,6 +167,32 @@ Pseudo-classes
     border-style: dashed;
     /* border-style: dotted; */
     /* border-style: double; */
+}
+
+#sociable {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 20px 0px;
+}
+#sociable ul li {
+    display: inline-block;
+    font-size: 30px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#sociable ul li a .fa-facebook-f {
+    color: #3b5998;
+}
+#sociable ul li a .fa-linkedin {
+    color: #387dc2;
+}
+#sociable ul li a .fa-github {
+    color: #333;
+}
+#sociable ul li a .fa-instagram {
+    color: #e1306c;
 }
 
 
