@@ -1,0 +1,169 @@
+h1 {
+    color: red;
+}
+
+section {
+    
+}
+
+/* 
+* Selectors
+* ID - Identity
+* - always unique
+* - one tag can have only one id
+* - represented by #
+* Class
+* - grouping of elements
+* - one tag can have multiple classes
+* - represented by .
+*/
+
+/* #home {
+    background-color: lightcoral;
+} */
+
+.bg-even {
+    background-color: lightgray;
+}
+.bg-odd {
+    background-color: lightgreen;
+}
+
+.section-wrapper {
+    padding: 40px;
+    /* margin-bottom: 80px; */
+}
+
+/* Nested selector */
+/* #home p {
+    font-size: 20px;
+    color: red;
+} */
+
+/* #home .grand-child p {
+    font-size: 20px;
+    color: red;
+} */
+
+/* #home .child > p {
+    font-size: 20px;
+    color: red;
+} */
+
+/* #home .grand-child > p {
+    font-size: 20px;
+    color: red;
+} */
+
+/* #home .grand-child > p,
+#home .grand-child > span {
+    font-size: 20px;
+    color: red;
+} */
+
+/* Will access immediate sibling span of p tag */
+/* #home .grand-child p + span {
+    font-size: 20px;
+    color: red;
+} */
+
+/* will access all the sibling span tags of p tag */
+#home .grand-child p ~ span {
+    font-size: 20px;
+    color: red;
+}
+
+
+/* Pseudo Class */
+/* #header ul li:first-child a {
+    color: red;
+} */
+
+/* #header ul li:last-child a {
+    color: red;
+} */
+
+/* #header ul li:nth-child(3) a {
+    color: red;
+} */
+
+/* #header ul li:nth-child(odd) a {
+    color: red;
+} */
+
+
+#header ul li:nth-child(even) a {
+    color: red;
+}
+
+#header ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#header ul li {
+    /* display: inline; */
+    display: inline-block;
+    margin-right: 10px;
+    width: 300px;
+}
+
+#header ul li a {
+    background-color: lightgray;
+    text-align: center;
+    display: block;
+    padding: 20px 0px;
+}
+
+#header ul li:hover a {
+    background-color: darkblue;
+    color: white;
+}
+
+#home {
+    height: 100vh;
+    /* background: linear-gradient(90deg, white 20%, #c94b4b, #4b134f, white); */
+    /* background-image: url("https://imagedelivery.net/xE-VtsYZUS2Y8MtLMcbXAg/7877169a/orig"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* background-size: cover; */
+    /* background-size: 100% 100%; */
+    /* background-position: right; */
+    /* background-color: white; */
+    background: white url("https://imagedelivery.net/xE-VtsYZUS2Y8MtLMcbXAg/7877169a/orig") no-repeat right/contain;
+    background-attachment: fixed;
+}
+
+#home h2 {
+    font-size: 100px;
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    text-transform: capitalize;
+    /* text-shadow: x y blue color; */
+    text-shadow: 5px 5px 10px rgb(91, 17, 17);
+    background-image: url("https://i.pinimg.com/originals/ef/5e/4b/ef5e4b4d024c66b42311e337ae8ab4cc.gif");
+    background-size: contain;
+    color: transparent;
+    background-clip: text;
+}
+#home p {
+    font-size: 40px;
+}
+
+#about {
+    height: 100vh;
+    /* background: linear-gradient(120deg, red, yellow); */
+    background-image: url("https://saamarketing.co.uk/wp-content/uploads/2022/08/The-Different-Types-of-Technology-GIF.gif");
+    /* background-repeat: no-repeat; */
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#skills {
+    height: 100vh;
+    background-image: url("https://static.wixstatic.com/media/ebdfd3_9bc8c67f163d4286bceac5dd08a81298~mv2.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
