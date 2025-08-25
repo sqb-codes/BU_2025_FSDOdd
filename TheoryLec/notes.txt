@@ -28,8 +28,14 @@ Features of JavaScript
 - Event Driven
   - Event - click, keypress, mousemove...
 - Multi-paradigm
-  - Object Oriented
+  - OOJS - Object Oriented
   - Procedural
   - Functional
 - DOM - Document Object Model
 - BOM - Browser Object Model
+
+==============================
+
+Defining variables in JS
+- let, var, const
+
