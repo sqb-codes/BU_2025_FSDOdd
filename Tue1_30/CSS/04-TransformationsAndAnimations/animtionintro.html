@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 20%;
+            /* transform: rotateY(180deg); */
+            /* animation-name: car-anim; */
+            /* animation-duration: 5s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: ease; */
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: linear; */
+            animation: car-anim 10s infinite linear;
+        }
+        @keyframes car-anim {
+            /* from {
+                transform: translateX(0px) rotateY(180deg);
+            }
+            to {
+                transform: translateX(1200px) rotateY(180deg);
+            } */
+
+            /* 0% {
+                transform: translateX(0px) rotateZ(180deg);
+            }
+            50% {
+                transform: translate(1200px, 500px) rotateZ(360deg);
+            }
+            100% {
+                transform: translateX(0px) rotateZ(720deg);
+            } */
+
+            0% {
+                transform: translateX(0px) rotateZ(0deg);
+            }
+            20% {
+                transform: translateX(0px) rotateZ(180deg);
+            }
+            40% {
+                transform: translateX(1200px) rotateZ(180deg);
+            }
+            60% {
+                transform: translateX(1200px) rotateZ(360deg);
+            }
+            80% {
+                transform: translateX(0px) rotateZ(360deg);
+            }
+            100% {
+                transform: translateX(0px) rotateZ(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Animations Introduction</h1>
+
+    <div>
+        <img src="purepng.com-car-top-viewcarscar-top-view-961524670079fkdn8.png" alt="">
+    </div>
+    
+</body>
+</html>
