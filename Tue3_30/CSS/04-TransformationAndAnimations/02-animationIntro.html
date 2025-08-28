@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 20%;
+            animation-name: car-anim;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            /* animation-timing-function: ease; */
+            /* animation-timing-function: ease-out; */
+            animation-timing-function: linear;
+        }
+        /* @keyframes car-anim {
+            from {
+                transform: translateX(0px);
+            }
+            to {
+                transform: translateX(1500px) rotateZ(30deg);
+            }
+        } */
+
+        /* @keyframes car-anim {
+            0% {
+                transform: translateX(0px) rotateZ(0deg);
+            }
+            50% {
+                transform: translateX(1500px) rotateZ(180deg);
+            }
+            100% {
+                transform: translateX(0px) rotateZ(180deg);
+            }
+        } */
+
+        @keyframes car-anim {
+            0% {
+                transform: translate(0px, 0px) rotateZ(0deg);
+            }
+            15% {
+                transform: translate(1500px, 0px) rotateZ(0deg);
+            }
+            30% {
+                transform: translate(1500px, 0px) rotateZ(90deg);
+            }
+            45% {
+                transform: translate(1500px, 500px) rotateZ(90deg);
+            }
+            60% {
+                transform: translate(1500px, 500px) rotateZ(180deg);
+            }
+            75% {
+                transform: translate(0px, 500px) rotateZ(180deg);
+            }
+            90% {
+                transform: translate(0px, 500px) rotateZ(270deg);
+            }
+            100% {
+                transform: translate(0px, 0px) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/047/428/462/small_2x/top-view-of-red-sedan-car-with-transparent-background-png.png" alt="">
+    
+</body>
+</html>

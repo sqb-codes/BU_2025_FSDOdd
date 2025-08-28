@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #spiderman {
+            position: absolute;
+            left: 45%;
+            top: 45%;
+            transition-duration: 6s;
+            transform: scale(0.01,0.01);
+        }
+
+        #parent {
+            perspective: 500px;
+        }
+        .img-wrapper {
+            display: inline-block;
+            height: 100vh;
+            width: 49%;
+            transition-duration: 2s;
+        }
+        .wrapper-1 {
+            transform-origin: left;
+        }
+        .wrapper-2 {
+            transform-origin: right;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        #parent:hover .wrapper-1 {
+            transform: rotateY(120deg);
+        }
+        #parent:hover .wrapper-2 {
+            transform: rotateY(-120deg);
+        }
+        body:hover #spiderman{
+            transform: scale(3,3);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="spiderman">
+        <img src="https://media.tenor.com/eEncfFAHYjMAAAAj/spiderman.gif" alt="">
+    </div>
+
+    <div id="parent">
+        <div class="img-wrapper wrapper-1">
+            <img src="https://variety.com/wp-content/uploads/2014/04/01-avengers-2012.jpg?w=1000&h=667&crop=1" alt="">
+        </div>
+        <div class="img-wrapper wrapper-2">
+            <img src="https://www.sydneysymphony.com/uploads/images/2025-Season-Assets/2025-Concert-Images/_heroSmall/626135/2025-Marvel-Infinity-Saga-Detail.png" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
