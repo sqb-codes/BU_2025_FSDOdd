@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // function revString() {
+        //     let str = "hello";
+        //     return str.split("").reverse().join("");
+        // }
+
+        // Two-pointer approach
+        function revString() {
+            let str = "hello";
+            const charArr = str.split();
+            let left = 0, right = charArr.length - 1;
+            while (left < right) {
+                const temp = charArr[left];
+                charArr[left] = charArr[right];
+                charArr[right] = temp;
+                left++;
+                right--;
+            }
+            return charArr.join("");
+        }
+    </script>
+
+</body>
+</html>

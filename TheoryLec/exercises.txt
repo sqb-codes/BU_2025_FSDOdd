@@ -1,0 +1,9 @@
+1. Reverse a string
+- Input: "hello"
+- Output: "olleh"
+
+2. Check Palindrome
+- Input: "nitin"
+- Output: true
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function isPalindrome() {
+            let str = "N.i.tin";
+            // Regex - Regular Expressions
+            // Normalize the string
+            // remove non-alphanumeric and lowercase for better comparison
+            let cleanStr = str.replace(/[^a-z0-9]/gi, '').toLowerCase();
+            // console.log(cleanStr);
+            return cleanStr === cleanStr.split("").reverse().join("");
+        }
+
+        isPalindrome()
+    </script>
+
+</body>
+</html>

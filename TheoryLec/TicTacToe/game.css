@@ -1,0 +1,14 @@
+table {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 250px;
+    height: 150px;
+    font-size: 48px;
+    background-color: lightcoral;
+}
+.btn:hover {
+    background-color: rgb(221, 167, 147);
+}
