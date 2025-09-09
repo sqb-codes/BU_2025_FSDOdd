@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --heading-color: #009967;
+            --text-color: #242424;
+            --img-width: 100%;
+            --default-color: #000;
+        }
+        h1 {
+            /* color: var(--heading-color); */
+            color: var(--heading-color, var(--default-color));
+        }
+        h2 {
+            color: var(--heading-color);
+        }
+        p {
+            color: var(--text-color);
+        }
+        img {
+            width: var(--img-width);
+        }
+        
+        ::placeholder {
+            color: red;
+        }
+
+        /* Mozilla */
+        ::-moz-placeholder {
+            color: red;
+        }
+
+        /* Chrome & Safari */
+        ::-webkit-input-placeholder {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Variables</h1>
+    <h2>This is a heading</h2>
+
+    <input type="text" placeholder="Enter your name">
+
+    
+</body>
+</html>
