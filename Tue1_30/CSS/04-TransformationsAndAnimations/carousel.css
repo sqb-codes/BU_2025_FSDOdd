@@ -20,19 +20,19 @@ img {
 }
 
 @keyframes carousel {
-    0% {
+    0%, 15% {
         transform: translateX(0%);
     }
-    20% {
+    20%, 35% {
         transform: translateX(-20%);
     }
-    40% {
+    40%, 55% {
         transform: translateX(-40%);
     }
-    60% {
+    60%, 75% {
         transform: translateX(-60%);
     }
-    80% {
+    80%, 95% {
         transform: translateX(-80%);
     }
     100% {

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            font-size: 16px;
+        }
+        img {
+            /* width: 1512px; */
+            /* width: 100%; */
+            width: 100vw;
+            /* height: 100%; */
+            height: 100vh;
+            object-fit: cover;
+            /* object-fit: contain; */
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        ul {
+            font-size: 20px;
+        }
+        ul li {
+            /* font-size: 1em; */
+            font-size: 1rem;
+            /* rem - always refers to root size */
+        }
+        @media(max-width: 768px) {
+            :root {
+                font-size: 13px;
+            }
+        }
+        @media(max-width: 576px) {
+            :root {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Units in CSS</h1>
+    <h2>This is some heading</h2>
+
+    <!-- 
+    pixel - px
+    % - use it with height and width
+    em => 1em = base size (default = 16px)
+    rem => root em
+    vh => viewport height
+    vw => viewport width
+    vmin
+    vmax
+     -->
+
+     <!-- <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/bb28e964e3ab3f7c.jpg?q=60" alt=""> -->
+    <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000,format=auto/m/268e/0cee/4eb4/d7d0/5d4a/5f4b/c2ea/0b62/7835/bf2a/bf2a.png" alt="">
+
+     <ul>
+        <li>List Item_1</li>
+        <li>List Item_2</li>
+        <li>List Item_3</li>
+        <li>List Item_4</li>
+     </ul>
+    
+</body>
+</html>

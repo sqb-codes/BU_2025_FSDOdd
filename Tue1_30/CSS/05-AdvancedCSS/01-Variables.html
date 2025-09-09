@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --heading-color: #ff00ee;
+            --text-color: #009900;
+            --default-color: #000;
+            --img-width: 100%;
+        }
+        h1 {
+            color: var(--heading-color, var(--default-color));
+        }
+        img {
+            width: var(--img-width);
+        }
+        p {
+            color: var(--text-color);
+        }
+        /* Attribute selector */
+        ::placeholder {
+            color: red;
+        }
+
+        /* Mozilla */
+        ::-moz-placeholder {
+            color: blue;
+        }
+        
+        /* Chrome & Safari */
+        ::-webkit-input-placeholder {
+            color: red;
+         }
+
+        ::-o-input-placeholder {
+            color: red;
+         }
+
+        ::-ms-input-placeholder {
+            color: red;
+         }
+
+        input[type="text"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>This is advanced CSS</h1>
+    <form action="#">
+        <input type="text" placeholder="Enter your name">
+    </form>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptatem, hic consequuntur in nobis libero distinctio aliquid ipsam asperiores. Esse asperiores aut molestiae quia autem delectus? Omnis dignissimos minus quis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos reprehenderit aperiam minus reiciendis quaerat perspiciatis omnis eligendi consectetur esse libero, corporis vero officiis maxime doloremque aliquam iste eius nostrum.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio animi eligendi fugiat ut magni placeat dicta autem voluptas iure, eos enim perspiciatis voluptatibus. Nisi eum quos cum vero in placeat.
+    </p>
+    
+</body>
+</html>
