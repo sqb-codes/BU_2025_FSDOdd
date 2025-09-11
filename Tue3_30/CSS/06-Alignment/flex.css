@@ -1,13 +1,30 @@
 img {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .row {
     display: flex;
+    
+    /* Align content on X-Axis */
     /* justify-content: center; */
     /* justify-content: space-between; */
     /* justify-content: space-around; */
     justify-content: space-evenly;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+
+    /* Align content on Y-Axis */
+    /* align-items: stretch; */
+    align-items: flex-start;
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* align-items: baseline; */
+
+    /* Change direction of columns */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
 }
 
 .col {
@@ -17,16 +34,30 @@ img {
 }
 
 .col-1 {
-    width: 15%;
+    /* width: 15%; */
+    flex-basis: 15%;
+    /* flex-grow: 0.5; */
+    /* align-self: center; */
+    /* order: 2; */
+    /* flex-basis: min-content; */
 }
 .col-2 {
-    width: 45%;
+    /* width: 45%; */
+    flex-basis: 45%;
+    /* flex-grow: 0.5; */
+    /* flex-shrink: 3; */
+    /* align-self: center; */
+    /* order: 1; */
+    /* flex-basis: max-content; */
 }
 .col-3 {
-    width: 25%;
+    /* width: 25%; */
+    flex-basis: 25%;
+    /* order: 3; */
+    /* flex-basis: max-content; */
 }
 
-ul {
+#section-2 ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -35,11 +66,9 @@ ul {
     gap: 10px;
     justify-content: center;
 }
-ul li {
+#section-2 ul li {
     height: 200px;
-    /* width: 15%; */
     width: 250px;
-    /* margin: 10px; */
     border: 3px solid red;
     background-color: lightblue;
 }
