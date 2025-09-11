@@ -8,6 +8,10 @@
 </head>
 <body>
 
+    <div class="overlay"></div>
+
+    <div id="topbar"></div>
+
     <header id="header">
         <h1>Positions Introduction</h1>
     </header>
@@ -20,6 +24,94 @@
         - relative
         - sticky
      -->
+
+     <nav id="main-nav">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Men</a>
+                </li>
+                <li>
+                    <a href="#">Women</a>
+                </li>
+                <li class="dropdown-wrapper">
+                    <a href="#">Sports</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#">Cricket</a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Bat</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ball</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cricket Kit</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pads</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Stumps</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Hockey</a>
+                            </li>
+                            <li>
+                                <a href="#">Football</a>
+                            </li>
+                            <li>
+                                <a href="#">Chess</a>
+                            </li>
+                            <li>
+                                <a href="#">Table Tennis</a>
+                            </li>
+                            <li>
+                                <a href="#">Pickle Ball</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown-wrapper">
+                    <a href="#">Electronics</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#">TV</a>
+                            </li>
+                            <li>
+                                <a href="#">Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#">Washing Machine</a>
+                            </li>
+                            <li>
+                                <a href="#">Tab</a>
+                            </li>
+                            <li>
+                                <a href="#">Laptop</a>
+                            </li>
+                            <li>
+                                <a href="#">More</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">More</a>
+                </li>
+            </ul>
+        </div>
+     </nav>
 
      <section id="section-1">
         <div class="container">
@@ -231,5 +323,17 @@
         </div>
      </section>
     
+
+     <script>
+        let element = document.querySelector(".dropdown-wrapper");
+        element.addEventListener("mouseenter", () => {
+            console.log("Mouse Over...");
+            document.querySelector(".overlay").classList.toggle("active");
+        })
+        element.addEventListener("mouseleave", () => {
+            console.log("Mouse Over...");
+            document.querySelector(".overlay").classList.toggle("active");
+        })
+     </script>
 </body>
 </html>

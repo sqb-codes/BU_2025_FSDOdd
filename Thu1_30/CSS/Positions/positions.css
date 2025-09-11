@@ -4,22 +4,111 @@
     box-sizing: border-box;
 }
 
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
 .container {
     width: 1300px;
     margin: 0 auto;
 }
 
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 150px;
+    background-color: rgba(41, 40, 40, 0.5);
+    z-index: 5;
+    display: none;
+}
+.overlay.active {
+    display: block;
+}
+
+#topbar {
+    /* height: 50px; */
+}
+
 #header {
     background-color: lightblue;
-    position: fixed;
+    position: sticky;
+    /* position: fixed; */
     /* right: 0px;
     bottom: 0px; */
     /* left: 45%; */
-    top: 0%;
+    top: 0px;
     width: 100%;
     text-align: center;
     padding: 15px 0px;
     z-index: 10;
+    margin-bottom: 20px;
+}
+
+#main-nav .container > ul > li {
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+    position: relative;
+}
+#main-nav .container > ul > li a {
+    display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+    /* background-color: lightgray; */
+    background-color: rgba(204, 202, 202, 0.5);
+    color: red;
+    transition-duration: 0.5s;
+    backdrop-filter: blur(5px);
+}
+
+#main-nav ul li a:hover {
+    background-color: gray;
+    color: white;
+}
+
+#main-nav .dropdown {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    display: none;
+}
+#main-nav .dropdown li a {
+    border-top: 1px solid #000;
+}
+#main-nav .container > ul > li:hover .dropdown {
+    display: block;
+}
+
+#main-nav .dropdown .nested-dropdown {
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    top: 0px;
+    display: none;
+}
+#main-nav .dropdown li:hover .nested-dropdown {
+    display: block;
+}
+
+/* 
+Pseudo Elements
+::before
+::after
+ */
+#main-nav .dropdown-wrapper::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    /* background-color: red; */
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid red;
+    /* border-bottom: 5px solid yellow; */
 }
 
 #section-1 {
@@ -60,6 +149,7 @@ section .desc {
     padding-left: 25px;
     /* background-color: red; */
     background-color: rgba(41, 40, 40, 0.5);
+    backdrop-filter: blur(5px);
     transition-duration: 1s;
 }
 
