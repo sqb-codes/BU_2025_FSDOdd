@@ -1,0 +1,57 @@
+/* Global Settings */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Helper Classes */
+.row {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+.d-block {
+    display: block;
+}
+.w-100 {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* Common Sections */
+#header {
+
+}
+
+#main-nav {
+
+}
+
+#footer {
+
+}
+
+/* Specific CSS */
