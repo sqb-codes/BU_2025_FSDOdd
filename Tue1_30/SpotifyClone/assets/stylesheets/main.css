@@ -1,0 +1,79 @@
+/* Global Settings */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --base-bg: rgb(0,0,0);
+    --primary-bg: rgb(18,18,18);
+    --icon-bg: rgb(240,240,240);
+    --text-base: rgb(255,255,255);
+    --text-muted: #b3b3b3;
+}
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Helvetica Neue",helvetica,arial,"Hiragino Kaku Gothic ProN",Meiryo,"MS Gothic";
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Helper Classes */
+.row {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-block {
+    display: block;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* Page Settings */
+#header {
+    background-color: var(--base-bg);
+}
+
+#header .logo a{
+    color: var(--text-base);
+}
+
+#main-nav {
+
+}
+
+#footer {
+
+}
+
+
+/* Page Specific CSS */
