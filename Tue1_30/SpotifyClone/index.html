@@ -17,16 +17,16 @@
 
     <!-- Header -->
     <header id="header">
-        <div class="row justify-space-between">
+        <div class="row justify-space-between align-items-center">
             <div class="col col-1">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="logo">
                         <a href="#" class="d-block">
                             <i class="fa-brands fa-spotify"></i>
                         </a>
                     </div>
                     <div class="sub-col">
-                        <div class="row">
+                        <div class="row align-items-center">
                             <div class="home sub-col-1">
                                 <a href="#" class="d-block">
                                     <i class="fa-solid fa-house"></i>
@@ -34,11 +34,11 @@
                             </div>
                             <div class="search sub-col-2">
                                 <form action="#">
-                                    <button type="submit">
+                                    <button type="submit" class="btn btn-submit">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                     </button>
-                                    <input type="text" placeholder="What do you want to play?">
-                                    <button>
+                                    <input type="text" class="w-100" placeholder="What do you want to play?">
+                                    <button class="btn btn-open">
                                         <i class="fa-solid fa-folder-open"></i>
                                     </button>
                                 </form>
@@ -48,27 +48,27 @@
                 </div>
             </div>
             <div class="col col-2">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="user-support-links">
-                        <button>
+                        <button class="btn link-style">
                             Premium
                         </button>
-                        <button>
+                        <button class="btn link-style">
                             Support
                         </button>
-                        <button>
+                        <button class="btn link-style">
                             Download
                         </button>
                     </div>
                     <div class="install-app">
-                        <a href="#">
+                        <a href="#" class="link-style">
                             <i class="fa-regular fa-circle-down"></i>
                             Install App
                         </a>
 
                     </div>
                     <div class="signIn">
-                        <a href="#">Sign Up</a>
+                        <a href="#" class="link-style">Sign Up</a>
                     </div>
                     <div class="logIn">
                         <a href="#">Log in</a>
@@ -77,6 +77,469 @@
             </div>
         </div>
     </header>
+
+    
+    <div id="content">
+         <!-- Sidebar -->
+        <aside id="sidebar">
+            <header class="header-wrapper">
+                <div class="row justify-space-between">
+                    <div class="heading">
+                        <h2>Your Library</h2>
+                    </div>
+                    <div class="create-icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="widget">
+                <h3>Create your first playlist</h3>
+                <p>
+                    It's easy, we'll help you
+                </p>
+                <button class="btn create-btn">Create Playlist</button>
+            </div>
+
+            <div class="widget">
+                <h3>Let's find some podcast to follow</h3>
+                <p>
+                    We'll keep you updated on new episodes
+                </p>
+                <button class="btn create-btn">Browse Podcasts</button>
+            </div>
+
+            <footer class="footer"></footer>
+        </aside>
+
+        <!-- Content -->
+        <main id="main">
+            <section id="section-1">
+                <h2>Trending Songs</h2>
+                <div class="row justify-space-evenly">
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+            <section id="section-2">
+                <h2>Trending Songs</h2>
+                <div class="row justify-space-evenly">
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+            <section id="section-3">
+                <h2>Trending Songs</h2>
+                <div class="row justify-space-evenly">
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+            <section id="section-4">
+                <h2>Trending Songs</h2>
+                <div class="row justify-space-evenly">
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+            <section id="section-5">
+                <h2>Trending Songs</h2>
+                <div class="row justify-space-evenly">
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col card">
+                        <a href="#">
+                            <img class="w-100" src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                            <h4>Oorum Blood - From "Dude"</h4>
+                            <span>
+                                Sai Abhyankkar
+                            </span>, 
+                            <span>
+                                Paal Dabba
+                            </span>,
+                            <span>
+                                bebhumika
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
     
 </body>
 </html>
