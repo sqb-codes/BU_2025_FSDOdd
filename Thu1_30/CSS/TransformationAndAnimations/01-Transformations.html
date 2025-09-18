@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box-1 {
+            border: 2px solid red;
+        }
+        img {
+            transition-duration: 5s;
+        }
+        #box-1:hover img {
+            /* transform: translateX(1500px); */
+            /* transform: translateY(1500px); */
+            /* transform: translate(1500px, 400px); */
+            /* transform: translateZ(400px); */
+            transform: translate(1500px, 400px) scale(5,5);
+        }
+
+        #box-2 {
+            width: 500px;
+            margin: 0 auto;
+            border: 4px solid gray;
+            perspective: 600px;
+            /* overflow: hidden; */
+        }
+        #box-2 img {
+            width: 100%;
+            /* transform-origin: left; */
+        }
+        #box-2:hover img {
+            /* transform: scaleX(1.5); */
+            /* transform: scaleY(1.5); */
+            /* transform: scale(3.5, 3.5) translateY(50px); */
+            /* transform: rotateX(180deg); */
+            /* transform: rotateY(-180deg); */
+            /* transform: rotateZ(360deg); */
+            /* transform: skewX(60deg); */
+            /* transform: skewY(180deg); */
+            transform: skew(180deg, 180deg);
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        Transformation - 2D + 3D
+        - translate
+        - rotate
+        - scale
+        - skew
+    -->
+    
+    <h1>Transformation</h1>
+    <div id="box-1">
+        <img src="12812.gif" alt="">
+    </div>
+    
+    <div id="box-2">
+        <img src="https://i.pinimg.com/736x/2c/85/f3/2c85f3cd66f8d3d7fcb93e6da8eee08c.jpg" alt="">
+    </div>
+</body>
+</html>

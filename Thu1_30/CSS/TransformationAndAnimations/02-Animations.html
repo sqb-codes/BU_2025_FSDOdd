@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 20%;
+            transform: rotateZ(180deg);
+            animation-name: anim-1;
+            animation-duration: 10s;
+            /* animation-delay: 5s; */
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+        }
+        @keyframes anim-1 {
+            /* from {
+                transform: translateX(0px) rotateZ(180deg);
+            }
+            to {
+                transform: translateX(1300px) rotateZ(180deg);
+            } */
+            0% {
+                transform: translate(0px, 0px) rotateZ(180deg);
+            }
+            15% {
+                transform: translate(1300px, 0px) rotateZ(180deg);
+            }
+            30% {
+                transform: translate(1300px, 0px) rotateZ(270deg);
+            }
+            45% {
+                transform: translate(1300px, 450px) rotateZ(270deg);
+            }
+            60% {
+                transform: translate(1300px, 450px) rotateZ(360deg);
+            }
+            75% {
+                transform: translate(0px, 450px) rotateZ(360deg);
+            }
+            100% {
+                transform: translate(0px) rotateZ(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <h1>Animations Example</h1> -->
+
+    <img src="purepng.com-car-top-viewcarscar-top-view-961524670079fkdn8.png" alt="">
+    
+</body>
+</html>
