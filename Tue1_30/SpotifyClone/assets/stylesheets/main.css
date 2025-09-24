@@ -245,3 +245,9 @@ a {
 #main .card a {
     color: var(--text-base);
 }
+#main .card h4,
+#main .card p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
