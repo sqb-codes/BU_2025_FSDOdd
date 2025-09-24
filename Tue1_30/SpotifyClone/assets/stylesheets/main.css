@@ -74,7 +74,7 @@ a {
     width: 45%;
 }
 #header .col-2 {
-    width: 36%;
+    width: 39%;
 }
 
 #header .col-1 .logo {
@@ -183,9 +183,10 @@ a {
     position: fixed;
     height: calc(100vh - 100px);
     background-color: #121212;
-    top: 8%;
+    top: 75px;
     padding: 8px 12px;
     color: var(--text-base);
+    z-index: -1;
 }
 #sidebar .header-wrapper {
     padding: 15px 18px;
@@ -219,21 +220,27 @@ a {
 #main {
     position: fixed;
     left: 31%;
-    top: 8%;
+    width: 69%;
+    top: 75px;
     background-color: #212121;
     padding: 15px;
     height: calc(100vh - 100px);
     overflow-y: scroll;
+    z-index: -1;
 }
 #main section {
     margin-bottom: 50px;
+}
+#main section .row {
+    flex-wrap: wrap;
+    gap: 25px;
 }
 #main h2 {
     color: var(--text-base);
     margin-bottom: 20px;
 }
 #main .card {
-    width: 16%;
+    width: 150px;
 }
 #main .card a {
     color: var(--text-base);
