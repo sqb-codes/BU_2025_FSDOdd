@@ -1,0 +1,49 @@
+/* 
+Responsive CSS - Media Queries
+Breakpoints for different screen sizes
+1. Desktop: 1200px and above
+2. Laptop: 992px to 1199px
+3. Tablet: 768px to 991px
+4. Mobile: 767px and below
+
+xxl: 1400px and above
+xl: 1200px to 1399px
+lg: 992px to 1199px
+md: 768px to 991px
+sm: 576px to 767px
+xs: below 576px
+*/
+
+@media(max-width: 1200px) {
+    #header .col-3 {
+        width: 30%;
+    }
+    #header .col-2 .search .search-icon {
+        left: 37%;
+    }
+}
+
+@media(max-width: 992px) {
+    #header .col-1 {
+        width: 30%;
+    }
+    #header .col-2 {
+        width: 32%;
+    }
+    #header .col-3 {
+        width: 35%;
+    }
+    #header .col-2 .search .search-icon {
+        left: 33%;
+    }
+}
+
+@media(max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+    #main {
+        left: 2%;
+        width: 100%;
+    }
+}
