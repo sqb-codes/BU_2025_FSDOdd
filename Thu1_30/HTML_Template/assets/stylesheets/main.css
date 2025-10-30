@@ -1,0 +1,84 @@
+/* Global Settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Helper Classes */
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-start {
+    align-items: start;
+}
+
+.grid {
+    display: grid;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header */
+#header {
+
+}
+
+/* Main Navigation */
+#main-navigation {
+
+}
+
+/* Banner */
+#banner {
+
+}
+
+/* Sidebar */
+#sidebar {
+
+}
+
+/* Main */
+#main {
+
+}
+
+/* Footer */
+#footer {
+
+}
+
+/* Page Specific CSS */
