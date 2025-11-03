@@ -3,6 +3,21 @@
     document.querySelector("#add").addEventListener("click", addTaskController);
 })();
 
+// [
+//     {
+//         "taskTitle": "Complete Project Report",
+//         "taskDesc": "Finalize and submit the project report by end of the week.",
+//         "startDate": "2024-06-10",
+//         "endDate": "2024-06-14"
+//     },
+//     {
+//         "taskTitle": "Team Meeting",
+//         "taskDesc": "Discuss project milestones and next steps with the team.",
+//         "startDate": "2024-06-12",
+//         "endDate": "2024-06-12"
+//     }
+// ]
+
 function addTaskController() {
     let taskTitle = document.querySelector("#taskTitle").value;
     let taskDesc = document.querySelector("#taskDesc").value;
