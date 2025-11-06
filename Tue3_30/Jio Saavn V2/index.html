@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="assets/stylesheets/responsive.css">
 
     <!-- Scripts -->
+    <script src="assets/javascripts/load_songs.js" defer></script>
     <script src="assets/javascripts/main.js" defer></script>
+    <script src="assets/javascripts/ajax_need.js" defer></script>
     
     <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/59d9b3ed6b.js" crossorigin="anonymous"></script> 
@@ -139,7 +141,7 @@
     <main id="main">
         <section id="section-1" class="section-wrapper">
             <h2>Trending Now</h2>
-            <div class="row justify-space-evenly">
+            <!-- <div class="row justify-space-evenly">
                 <div class="card">
                     <div class="img-wrapper">
                         <a href="#">
@@ -339,12 +341,15 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <ul id="trending-list" class="songs-list">
+
+            </ul>
         </section>
 
         <section id="section-2" class="section-wrapper">
             <h2>Top Charts</h2>
-            <div class="row justify-space-evenly">
+            <!-- <div class="row justify-space-evenly">
                 <div class="card">
                     <div class="img-wrapper">
                         <a href="#">
@@ -544,12 +549,12 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section id="section-3" class="section-wrapper">
             <h2>New Releases</h2>
-            <div class="row justify-space-evenly">
+            <!-- <div class="row justify-space-evenly">
                 <div class="card">
                     <div class="img-wrapper">
                         <a href="#">
@@ -749,12 +754,12 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section id="section-4" class="section-wrapper">
             <h2>Editorial Picks</h2>
-            <div class="row justify-space-evenly">
+            <!-- <div class="row justify-space-evenly">
                 <div class="card">
                     <div class="img-wrapper">
                         <a href="#">
@@ -954,212 +959,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="section-5" class="section-wrapper">
-            <h2>Trending Podcasts</h2>
-            <div class="row justify-space-evenly">
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-space-evenly">
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <a href="#">
-                            <img src="https://c.saavncdn.com/697/Ek-Aur-Baar-Kishore-Kumar-Hindi-2025-20250917053932-150x150.jpg?bch=488505" alt="img">
-                        </a>
-                    </div>
-                    <div class="text-wrapper">
-                        <h3>Ek Aur Baar Kishore Kumar</h3>
-                        <p>
-                            <a href="#">Kishore Kumar</a>
-                            <a href="#"> R.D. Burman</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </section>
     </main>
 
@@ -1176,8 +976,16 @@
         </div>
     </aside>
 
+    <div id="playlist-popup">
+        <h3>Select Playlist</h3>
+        <button class="close-popup" id="close-playlist-popup">close</button>
+        <ul id="playlist-popup-list">
+
+        </ul>
+    </div>
+
     <footer id="player-footer">
-        <audio controls>
+        <audio controls id="audio-player">
             <source src="">
         </audio>
     </footer>

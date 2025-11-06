@@ -8,6 +8,7 @@
 // console.log(document.querySelector("#create-playlist-btn"));
 
 document.querySelector("#create-playlist-btn").addEventListener("click", createPlaylist);
+document.querySelector("#close-playlist-popup").addEventListener("click", closePopup);
 
 let playListData = [];
 
@@ -30,4 +31,8 @@ function createPlaylist() {
             li.style.transform = "translateX(0%)";
         }, 100);
     }
+}
+
+function closePopup() {
+    document.querySelector("#playlist-popup").style.display = "none";
 }
