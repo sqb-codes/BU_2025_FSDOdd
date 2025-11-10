@@ -180,3 +180,31 @@ ul {
 .songs-wrapper .btn:hover {
     color: var(--color-1);
 }
+
+#songs-new-release {
+    gap: 20px;
+}
+#songs-new-release li{
+    cursor: pointer;
+}
+#songs-new-release li span{
+    font-size: 20px;
+}
+#songs-new-release li button {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    background-color: #45B39D;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}
+#songs-new-release li button:hover {
+    background-color: var(--color-1);
+}
+
+#songs-new-release li img {
+    width: 100%;
+    margin-bottom: 10px;
+}

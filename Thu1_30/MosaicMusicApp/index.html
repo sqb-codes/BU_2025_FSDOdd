@@ -18,6 +18,8 @@
 
     <!-- Javascripts -->
     <script src="assets/javascripts/main.js"></script>
+    <script src="assets/javascripts/load_songs.js"></script>
+    <!-- <script src="assets/javascripts/ajax_need.js"></script> -->
 </head>
 <body>
 
@@ -30,8 +32,8 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
                 </div>
-                <div class="audio-player">
-                    <audio controls>
+                <div id="audio-player">
+                    <audio controls id="audio">
                         <source src="">
                     </audio>
                 </div>
@@ -140,16 +142,17 @@
                     <div id="banner"></div>
                     <section id="section-1" class="songs-wrapper">
                         <h2>New Release</h2>
-                        <div class="grid section-grid">
-                            <div class="song-card">
+                        <ul class="grid section-grid" id="songs-new-release">
+                            
+                            <!-- <div class="song-card">
                                 <div class="song-img">
                                     <a href="#">
                                         <img src="https://p.w3layouts.com/demos_new/template_demo/07-03-2020/mosaic-demo_Free/603993809/web/images/v1.jpg" alt="">
                                     </a>
                                 </div>
                                 <button class="btn">Play Now</button>
-                            </div>
-                            <div class="song-card">
+                            </div> -->
+                            <!-- <div class="song-card">
                                 <div class="song-img">
                                     <a href="#">
                                         <img src="https://p.w3layouts.com/demos_new/template_demo/07-03-2020/mosaic-demo_Free/603993809/web/images/v2.jpg" alt="">
@@ -204,8 +207,8 @@
                                     </a>
                                 </div>
                                 <button class="btn">Play Now</button>
-                            </div>
-                        </div>
+                            </div> -->
+                        </ul>
                     </section>
 
                     <section id="section-2" class="songs-wrapper">
