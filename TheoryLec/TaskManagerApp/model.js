@@ -26,6 +26,8 @@ let taskObj = {
         newTask.taskId = this.taskId;
         this.taskList.push(newTask);
 
+        console.log(this.taskList);
+
         // let newTask = new Task(title, description, startDate, dueDate);
         // this.taskList.push({id: this.taskId, ...newTask});
     },

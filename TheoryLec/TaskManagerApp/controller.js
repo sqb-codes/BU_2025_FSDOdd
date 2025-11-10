@@ -24,25 +24,58 @@ function addTaskController() {
     let startDate = document.querySelector("#startDate").value;
     let endDate = document.querySelector("#endDate").value;
 
-    let ul = document.querySelector("#taskList");
-
-    let li = document.createElement("li");
-    
-    let h3 = document.createElement("h3");
-    let p = document.createElement("p");
-    let spanStartDate = document.createElement("span");
-    let spanEndDate = document.createElement("span");
-
-    h3.innerText = taskTitle;
-    p.innerText = taskDesc;
-    spanStartDate.innerText = startDate;
-    spanEndDate.innerText = endDate;
-
-    li.appendChild(h3);
-    li.appendChild(p);
-    li.appendChild(spanStartDate);
-    li.appendChild(spanEndDate);
-
-    ul.appendChild(li);
-
+    taskObj.addTask(taskTitle, taskDesc, startDate, endDate); 
+    showTaskList();
+    saveTaskList();
 }
+
+function showTaskList() {
+    let ul = document.querySelector("#taskList");
+    ul.innerHTML = "";
+
+    taskObj.taskList.forEach(task => {
+        let li = document.createElement("li");
+        let h3 = document.createElement("h3");
+        let p = document.createElement("p");
+        let spanStartDate = document.createElement("span");
+        let spanEndDate = document.createElement("span");
+
+        h3.innerText = task.title;
+        p.innerText = task.description;
+        spanStartDate.innerText = task.startDate;
+        spanEndDate.innerText = task.endDate;
+
+        li.appendChild(h3);
+        li.appendChild(p);
+        li.appendChild(spanStartDate);
+        li.appendChild(spanEndDate);
+
+        ul.appendChild(li);
+    })
+}
+
+
+function loadTaskList() {
+    if(window.localStorage) {
+        if(localStorage.getItem("taskList")) {
+            let data = localStorage.getItem("taskList");
+            taskObj.taskList = JSON.parse(data);
+            showTaskList();
+        }
+    }
+    else {
+        alert("Your browser does not support local storage!");
+    }
+}
+
+function saveTaskList() {
+    if(window.localStorage) {
+        let data = JSON.stringify(taskObj.taskList);
+        localStorage.setItem("taskList", data);
+    }
+    else {
+        alert("Your browser does not support local storage!");
+    }
+}
+
+loadTaskList();

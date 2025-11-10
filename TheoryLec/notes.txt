@@ -41,3 +41,20 @@ Defining variables in JS
 
 ==============================
 
+CRUD Operations
+- Create
+- Read
+- Update
+- Delete
+
+Search Operations
+Sorting Operations
+
+==============================
+
+MVC Architecture
+- Model
+- View
+- Controller
+
+
