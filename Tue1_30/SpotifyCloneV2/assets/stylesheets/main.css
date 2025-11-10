@@ -244,6 +244,53 @@ a {
     font-size: 30px;
 }
 
+#songs-collection li {
+    width: 20%;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    color: var(--text-base);
+    text-overflow: ellipsis;
+}
+
+#songs-collection li img{
+    width: 100%;   
+    cursor: pointer;
+}
+
+#songs-collection li span{
+    font-size: 20px;
+    color: var(--text-base);
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#songs-collection li button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1DB954;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+#audio-player {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+}
+#audio-player audio {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+}
+
 /* Main */
 #main {
     position: fixed;
