@@ -208,3 +208,32 @@ ul {
     width: 100%;
     margin-bottom: 10px;
 }
+
+#playList {
+    margin-top: 20px;
+}
+
+#playList li {
+    margin-bottom: 15px;
+    background-color: #9E9E9E;
+    padding: 10px;
+    width: 90%;
+    cursor: pointer;
+    position: relative;
+}
+#playList li img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#playList li:hover {
+    background-color: var(--color-1);
+}
+#playList li button {
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}

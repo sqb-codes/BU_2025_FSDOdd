@@ -16,6 +16,10 @@ fetch(URL)
 .then(data => {
     console.log(data);
     tracks = data.results[0].tracks;
+    displaySongs(tracks);
+});
+
+function displaySongs(tracks) {
     let ul = document.querySelector("#songs-new-release");
     tracks.forEach(track => {
         let li = document.createElement("li");
@@ -26,6 +30,8 @@ fetch(URL)
         span.innerText = track.name;
         img.src = track.album_image;
         button.innerText = "Add to playlist";
+        button.setAttribute("id", track.id);
+        button.addEventListener("click", addSongController);
 
         img.title = track.id;
         img.addEventListener("click", playSong);
@@ -36,7 +42,7 @@ fetch(URL)
         ul.appendChild(li);
 
     })
-});
+}
 
 function playSong() {
     let songId = this.title;
