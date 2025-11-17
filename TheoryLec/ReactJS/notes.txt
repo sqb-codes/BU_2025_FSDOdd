@@ -1,0 +1,50 @@
+LAMP Stack
+XAMPP Stack
+
+MPA - Multi-Page Application
+
+MEAN Stack
+SPA - Single-Page Application
+
+React
+- Developed by Meta
+- Mainly focused on building user interfaces
+- Component-based architecture
+- JSX (JavaScript XML) syntax
+
+In JavaScript
+let name = "John";
+let elem = document.createElement("p");
+elem.innerText = "Hello, " + name + "!";
+document.body.appendChild(elem);
+
+In JSX:
+let name = "John";
+<p>Hello, {name}!</p>
+
+Virtual DOM
+Unidirectional Data Flow
+- Parents pass data to children via props
+- Children cannot directly modify parent data
+States and props
+
+- Props: Read-only data passed from parent to child
+- State: Mutable data managed within a component
+
+Getting Started with React
+Prerequisites
+- Node.js and npm installed
+
+Ways to setup React
+1. Using Create React App
+2. Using Vite - Most recommended
+3. Remix
+4. Next.js
+5. Gatsby
+6. Parcel
+
+Setup React using Vite
+npm create vite@latest first-react-app --template react
+cd first-react-app
+npm install
+npm run dev
